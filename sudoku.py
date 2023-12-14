@@ -28,7 +28,8 @@ def sudoku_player(sudoku_board):
 
         current_digit = input("Which digit? Or type 'x' to redo position.\n")
         while current_digit == 'x':
-            current_
+            current_position = 
+            pass
     
         sudoku_board[current_position[1]][current_position[0]] = current_digit
         sudoku_print(sudoku_board)
