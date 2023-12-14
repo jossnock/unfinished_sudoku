@@ -18,6 +18,8 @@ def sudoku_player(sudoku_board):
                 for j in range(len(sudoku_board[i])):
                     if sudoku_board[i][j] == None:
                         solved = False
+                    else:
+                        solved = True
         return solved
 
     while sudoku_finish_checker(sudoku_board) == False: #while it's unsolved
