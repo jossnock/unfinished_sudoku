@@ -22,12 +22,16 @@ def sudoku_player(sudoku_board):
 
         #asking for position and digit:
         current_position = algebraic_notation_converter(input('Position a digit\n'))
-        current_digit = input('Which digit?\n')
+        sudoku_board[current_position[1]][current_position[0]] = 'X' #shows position
+        sudoku_print(sudoku_board)
 
+
+        current_digit = input("Which digit? Or type 'x' to redo position.\n")
+        while current_digit == 'x':
+            current_
     
         sudoku_board[current_position[1]][current_position[0]] = current_digit
         sudoku_print(sudoku_board)
-
 
 
 
@@ -41,6 +45,6 @@ def sudoku_player(sudoku_board):
 Todo:
  - make UI (maybe add row/column numbers/letters)
  - implement number placing
- - implement notes functionality
+ - implement notes functionality (different colour?)
  - use % to find which coords are in the boxes
 """
