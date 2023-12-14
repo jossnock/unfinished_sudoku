@@ -1,30 +1,32 @@
 sudoku_board = [['','','','','','','','','']
                ,['','','','','','','','','']
-               ,['','','','','','','','',''],
-                ['','','','','','','','','']
                ,['','','','','','','','','']
-               ,['','','','','','','','',''],
-                ['','','','','','','','','']
+               ,['','','','','','','','','']
+               ,['','','','','','','','','']
+               ,['','','','','','','','','']
+               ,['','','','','','','','','']
                ,['','','','','','','','','']
                ,['','','','','','','','','']]
 
 def sudoku_player(sudoku_board):
-    def sudoku_print(sudoku_board):
-        pass
-    sudoku_print(sudoku_board)
-    #first part corresponds to column, second for mark
-    def algebraic_notation_converter(algebraic_position):
-        pass
-    current_position = algebraic_notation_converter(input('Position a digit'))
+    while sudoku_board.count('') > 0: #while there's empty spaces
+        def sudoku_print(sudoku_board):
+            #prints the board neatly
+            pass
+        sudoku_print(sudoku_board)
 
-    current_position_column = current_position[0]
-    current_position_row = current_position[1]
-    current_digit = input('Which number?')
-    sudoku_board[current_position_row][current_position_column] = current_digit
+        def algebraic_notation_converter(algebraic_position): 
+            #converts algebraic notation into coordinates on the grid e.g. a7 becomes 12
+            pass
+
+        #asking for position and digit:
+        current_position = algebraic_notation_converter(input('Position a digit\n'))
+        current_digit = input('Which digit?\n')
+
     
+        sudoku_board[current_position[1]][current_position[0]] = current_digit
+        sudoku_print(sudoku_board)
 
-
-    
 
 
 
