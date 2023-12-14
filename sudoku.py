@@ -1,12 +1,12 @@
-sudoku_board = [[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]
-               ,[None, None, None, None, None, None, None, None, None]]
+sudoku_board = [[None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None],
+                [None, None, None, None, None, None, None, None, None]]
 
 def sudoku_player(sudoku_board):
     def sudoku_finish_checker(sudoku_board):
