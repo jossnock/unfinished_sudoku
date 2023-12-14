@@ -16,8 +16,9 @@ def sudoku_player(sudoku_board):
         sudoku_print(sudoku_board)
 
         def algebraic_notation_converter(algebraic_position): 
-            #converts algebraic notation into coordinates on the grid e.g. a7 becomes 12
+            #converts algebraic notation into a position on the grid e.g. a7 becomes 12
             pass
+            return position
 
         #asking for position and digit:
         current_position = algebraic_notation_converter(input('Position a digit\n'))
